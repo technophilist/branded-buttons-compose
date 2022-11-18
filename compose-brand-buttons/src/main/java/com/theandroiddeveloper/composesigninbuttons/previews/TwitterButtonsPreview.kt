@@ -10,7 +10,7 @@ import com.theandroiddeveloper.composesigninbuttons.twitter.LightTwitterButton
 
 @PhoneDarkAndNightPreview
 @Composable
-fun TwitterButtonsPreview() {
+internal fun TwitterButtonsPreview() {
     PreviewColumn {
         DarkTwitterButton(label = "Sign in with Twitter", onClick = { /*TODO*/ })
         Spacer(modifier = Modifier.size(16.dp))
