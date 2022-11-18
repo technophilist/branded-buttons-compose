@@ -44,4 +44,11 @@ internal sealed class BrandedButtonType(
         backgroundColor = Color(0xFF1D9BF0),
         contentColor = Color.White
     )
+
+    object DarkFacebookButton : BrandedButtonType(
+        iconResId = R.drawable.facebook_logo_white,
+        iconHeight = 25.dp,
+        backgroundColor = Color(0xFF1877f2),
+        contentColor = Color.White
+    )
 }
