@@ -11,7 +11,7 @@ import com.theandroiddeveloper.composesigninbuttons.twitter.LightTwitterButton
 
 @PhoneDarkAndNightPreview
 @Composable
-fun AllButtonsPreview() {
+internal fun AllButtonsPreview() {
     PreviewColumn {
         Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
             DarkGoogleButton(label = "Sign in with Google", onClick = { /*TODO*/ })

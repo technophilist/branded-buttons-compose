@@ -16,4 +16,4 @@ import androidx.compose.ui.tooling.preview.Preview
     showSystemUi = true,
     uiMode = UI_MODE_NIGHT_YES
 )
-annotation class PhoneDarkAndNightPreview
+internal annotation class PhoneDarkAndNightPreview

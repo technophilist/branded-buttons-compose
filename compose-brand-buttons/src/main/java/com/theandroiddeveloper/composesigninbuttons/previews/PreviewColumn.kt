@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 
 
 @Composable
-fun PreviewColumn(content: @Composable ColumnScope.() -> Unit) {
+internal fun PreviewColumn(content: @Composable ColumnScope.() -> Unit) {
     MaterialTheme(if (isSystemInDarkTheme()) darkColors() else lightColors()) {
         Surface {
             Column(
