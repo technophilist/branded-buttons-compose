@@ -71,7 +71,7 @@ internal fun BaseBrandButton(
                 imageVector = ImageVector.vectorResource(brandedButtonType.iconResId),
                 contentDescription = null
             )
-            Spacer(modifier = Modifier.width(8.dp))
+            Spacer(modifier = Modifier.width(24.dp))
             Text(text = label, style = textStyle, color = brandedButtonType.contentColor)
         }
     }
