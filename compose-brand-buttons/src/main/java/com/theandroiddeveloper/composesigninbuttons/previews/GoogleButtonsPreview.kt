@@ -5,23 +5,23 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.composesigninbuttons.google.DarkGoogleButton
-import com.theandroiddeveloper.composesigninbuttons.google.LightGoogleButton
-import com.theandroiddeveloper.composesigninbuttons.twitter.DarkTwitterButton
-import com.theandroiddeveloper.composesigninbuttons.twitter.LightTwitterButton
+import com.theandroiddeveloper.composesigninbuttons.Brand
+import com.theandroiddeveloper.composesigninbuttons.BrandedButton
 
 
 @PhoneDarkAndNightPreview
 @Composable
 internal fun DarkGoogleButtonPreview() {
     PreviewColumn {
-        DarkGoogleButton(
-            label = "Sign up with Google",
-            onClick = {}
+        BrandedButton(
+            brand = Brand.Google.DarkGoogleButton,
+            label = "Sign in with Google",
+            onClick = { /*TODO*/ }
         )
         Spacer(modifier = Modifier.size(16.dp))
-        LightGoogleButton(
-            label = "Sign up with Google",
+        BrandedButton(
+            brand = Brand.Google.LightGoogleButton,
+            label = "Sign in with Google",
             onClick = { /*TODO*/ }
         )
     }
