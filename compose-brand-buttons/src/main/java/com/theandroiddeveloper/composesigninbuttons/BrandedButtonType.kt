@@ -51,4 +51,18 @@ internal sealed class BrandedButtonType(
         backgroundColor = Color(0xFF1877f2),
         contentColor = Color.White
     )
+
+    object DarkAppleButton:BrandedButtonType(
+        iconResId = R.drawable.apple_logo_white,
+        iconHeight = 25.dp,
+        backgroundColor = Color(0xFF000000),
+        contentColor = Color.White
+    )
+
+    object LightAppleButton : BrandedButtonType(
+        iconResId = R.drawable.apple_logo_black,
+        iconHeight = 25.dp,
+        backgroundColor = Color.White,
+        contentColor = Color.Black
+    )
 }
