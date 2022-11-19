@@ -5,15 +5,23 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.composesigninbuttons.twitter.DarkTwitterButton
-import com.theandroiddeveloper.composesigninbuttons.twitter.LightTwitterButton
+import com.theandroiddeveloper.composesigninbuttons.Brand
+import com.theandroiddeveloper.composesigninbuttons.BrandedButton
 
 @PhoneDarkAndNightPreview
 @Composable
 internal fun TwitterButtonsPreview() {
     PreviewColumn {
-        DarkTwitterButton(label = "Sign in with Twitter", onClick = { /*TODO*/ })
+        BrandedButton(
+            brand = Brand.Twitter.DarkTwitterButton,
+            label = "Sign in with Twitter",
+            onClick = { /*TODO*/ }
+        )
         Spacer(modifier = Modifier.size(16.dp))
-        LightTwitterButton(label = "Sign in with Twitter", onClick = {})
+        BrandedButton(
+            brand = Brand.Twitter.LightTwitterButton,
+            label = "Sign in with Twitter",
+            onClick = { /*TODO*/ }
+        )
     }
 }
