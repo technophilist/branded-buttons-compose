@@ -36,7 +36,7 @@ internal fun BaseBrandButton(
     brandedButtonType: BrandedButtonType,
     label: String,
     onClick: () -> Unit,
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     textStyle: TextStyle = LocalTextStyle.current,
     enabled: Boolean = true,
     elevation: ButtonElevation? = ButtonDefaults.elevation(),
