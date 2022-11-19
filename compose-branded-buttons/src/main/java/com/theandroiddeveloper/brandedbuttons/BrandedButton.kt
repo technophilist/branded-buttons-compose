@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
@@ -65,7 +66,7 @@ fun BrandedButton(
         ) {
             Image(
                 modifier = Modifier.height(brand.iconHeight),
-                imageVector = ImageVector.vectorResource(brand.iconResId),
+                painter = painterResource(id = brand.iconResId),
                 contentDescription = null
             )
             Spacer(modifier = Modifier.width(24.dp))

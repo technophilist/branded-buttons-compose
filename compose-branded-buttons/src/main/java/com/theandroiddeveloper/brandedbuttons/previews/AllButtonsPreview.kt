@@ -47,6 +47,16 @@ internal fun AllButtonsPreview() {
                 label = "Sign in with Apple",
                 onClick = { /*TODO*/ }
             )
+            BrandedButton(
+                brand = Brand.Github.DarkGithubButton,
+                label = "Sign in with Github",
+                onClick = { /*TODO*/ }
+            )
+            BrandedButton(
+                brand = Brand.Github.LightGithubButton,
+                label = "Sign in with Github",
+                onClick = { /*TODO*/ }
+            )
         }
     }
 }
