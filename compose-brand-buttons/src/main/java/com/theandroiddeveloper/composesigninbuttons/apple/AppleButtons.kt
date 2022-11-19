@@ -1,7 +1,6 @@
 package com.theandroiddeveloper.composesigninbuttons.apple
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.ButtonElevation
 import androidx.compose.material.LocalTextStyle
@@ -10,8 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.composesigninbuttons.BaseBrandButton
+import com.theandroiddeveloper.composesigninbuttons.BrandButton
 import com.theandroiddeveloper.composesigninbuttons.BrandedButtonType
 
 @Composable
@@ -25,7 +23,7 @@ fun DarkAppleButton(
     shape: Shape = MaterialTheme.shapes.small,
     border: BorderStroke? = null,
 ) {
-    BaseBrandButton(
+    BrandButton(
         brandedButtonType = BrandedButtonType.DarkAppleButton,
         label = label,
         textStyle = textStyle,
@@ -49,7 +47,7 @@ fun LightAppleButton(
     shape: Shape = MaterialTheme.shapes.small,
     border: BorderStroke? = null,
 ) {
-    BaseBrandButton(
+    BrandButton(
         brandedButtonType = BrandedButtonType.LightAppleButton,
         label = label,
         textStyle = textStyle,

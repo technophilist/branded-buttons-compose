@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
-import com.theandroiddeveloper.composesigninbuttons.BaseBrandButton
+import com.theandroiddeveloper.composesigninbuttons.BrandButton
 import com.theandroiddeveloper.composesigninbuttons.BrandedButtonType
 
 @Composable
@@ -23,7 +23,7 @@ fun DarkFacebookButton(
     shape: Shape = MaterialTheme.shapes.small,
     border: BorderStroke? = null
 ) {
-    BaseBrandButton(
+    BrandButton(
         brandedButtonType = BrandedButtonType.DarkFacebookButton,
         label = label,
         textStyle = textStyle,
