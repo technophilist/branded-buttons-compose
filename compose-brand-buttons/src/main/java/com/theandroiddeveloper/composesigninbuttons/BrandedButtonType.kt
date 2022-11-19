@@ -2,6 +2,8 @@ package com.theandroiddeveloper.composesigninbuttons
 
 
 import androidx.annotation.DrawableRes
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -15,20 +17,23 @@ internal sealed class BrandedButtonType(
     @DrawableRes val iconResId: Int,
     val iconHeight: Dp,
     val backgroundColor: Color,
-    val contentColor: Color
+    val contentColor: Color,
+    val contentPadding: PaddingValues = ButtonDefaults.ContentPadding
 ) {
     object LightGoogleButton : BrandedButtonType(
         iconResId = R.drawable.btn_google_light_normal_ios,
         iconHeight = 40.dp,
         backgroundColor = Color.White,
-        contentColor = Color.Gray
+        contentColor = Color.Gray,
+        contentPadding = PaddingValues(end = 8.dp)
     )
 
     object DarkGoogleButton : BrandedButtonType(
         iconResId = R.drawable.btn_google_light_normal_ios,
         iconHeight = 40.dp,
         backgroundColor = Color(0xFF4285F4),
-        contentColor = Color.White
+        contentColor = Color.White,
+        contentPadding = PaddingValues(end = 8.dp)
     )
 
     object DarkTwitterButton : BrandedButtonType(
@@ -52,7 +57,7 @@ internal sealed class BrandedButtonType(
         contentColor = Color.White
     )
 
-    object DarkAppleButton:BrandedButtonType(
+    object DarkAppleButton : BrandedButtonType(
         iconResId = R.drawable.apple_logo_white,
         iconHeight = 25.dp,
         backgroundColor = Color(0xFF000000),
