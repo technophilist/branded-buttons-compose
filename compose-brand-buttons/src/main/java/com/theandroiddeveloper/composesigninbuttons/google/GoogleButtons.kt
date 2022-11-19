@@ -35,8 +35,7 @@ fun DarkGoogleButton(
         enabled = enabled,
         elevation = elevation,
         shape = shape,
-        border = border,
-        contentPadding = PaddingValues(end = 8.dp)
+        border = border
     )
 }
 
@@ -60,7 +59,6 @@ fun LightGoogleButton(
         enabled = enabled,
         elevation = elevation,
         shape = shape,
-        border = border,
-        contentPadding = PaddingValues(end = 8.dp)
+        border = border
     )
 }
