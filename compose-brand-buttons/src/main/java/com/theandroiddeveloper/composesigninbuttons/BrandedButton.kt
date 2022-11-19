@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
  * @param border Border to draw around the button.
  */
 @Composable
-fun BrandButton(
+fun BrandedButton(
     brand: Brand,
     label: String,
     onClick: () -> Unit,
