@@ -30,8 +30,6 @@ import androidx.compose.ui.unit.dp
  * @param elevation [ButtonElevation] used to resolve the elevation for this button in different
  * @param shape Defines the button's shape as well as its shadow.
  * @param border Border to draw around the button.
- * @param contentPadding The spacing values to apply internally between the container and the
- * content.
  */
 @Composable
 internal fun BaseBrandButton(
@@ -43,8 +41,7 @@ internal fun BaseBrandButton(
     enabled: Boolean = true,
     elevation: ButtonElevation? = ButtonDefaults.elevation(),
     shape: Shape = MaterialTheme.shapes.small,
-    border: BorderStroke? = null,
-    contentPadding: PaddingValues = ButtonDefaults.ContentPadding
+    border: BorderStroke? = null
 ) {
     Button(
         modifier = Modifier
@@ -56,7 +53,7 @@ internal fun BaseBrandButton(
         elevation = elevation,
         shape = shape,
         border = border,
-        contentPadding = contentPadding
+        contentPadding = brandedButtonType.contentPadding
     ) {
         Row(
             modifier = Modifier.semantics(mergeDescendants = true) {
