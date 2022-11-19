@@ -1,10 +1,11 @@
-package com.theandroiddeveloper.composesigninbuttons
+package com.theandroiddeveloper.brandedbuttons
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.theandroiddeveloper.composesigninbuttons.R
 
 /**
  * A sealed classes hierarchy that contains different visual properties associated with each branded
