@@ -77,4 +77,21 @@ sealed class Brand(
             contentColor = Color.Black
         )
     }
+
+    object Github{
+        object LightGithubButton:Brand(
+            iconResId = R.drawable.github_logo_black,
+            iconHeight = 40.dp,
+            backgroundColor = Color.White,
+            contentColor = Color.Black,
+            contentPadding = PaddingValues(horizontal = 8.dp)
+        )
+        object DarkGithubButton:Brand(
+            iconResId = R.drawable.github_logo_white,
+            iconHeight = 40.dp,
+            backgroundColor = Color(0xFF333333),
+            contentColor = Color.White,
+            contentPadding = PaddingValues(horizontal = 8.dp)
+        )
+    }
 }
