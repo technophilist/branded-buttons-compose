@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.theandroiddeveloper.composesigninbuttons'
+    namespace 'com.theandroiddeveloper.brandedbuttons'
     compileSdk 33
 
     defaultConfig {
