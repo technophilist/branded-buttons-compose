@@ -10,3 +10,30 @@ Branded Buttons for compose is a library that contains buttons stylized accordin
 - Github 
 - Apple 
 - Facebook 
+
+## Usage
+The central API of this library is the ```BrandedButton()``` composable function. It has three mandatory arguments that allows you to specify the type of the branded button, label and a lamda that will be executed when the button is clicked. It also has other optional parameters that allows you to customize the button.
+```kotlin
+@Composable
+fun BrandedButton(
+    brandedButtonType: BrandedButtonType,
+    label: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    textStyle: TextStyle = LocalTextStyle.current.copy(fontWeight = FontWeight.Bold),
+    enabled: Boolean = true,
+    elevation: ButtonElevation? = ButtonDefaults.elevation(),
+    shape: Shape = MaterialTheme.shapes.small,
+    border: BorderStroke? = null
+)
+```
+
+### Example
+```kotlin
+// A braded Github social login button.
+BrandedButton(
+  brandedButtonType = BrandedButtonType.Github.DarkGithubButton,
+  label = "Sign in with Github",
+  onClick = {}
+)
+```
