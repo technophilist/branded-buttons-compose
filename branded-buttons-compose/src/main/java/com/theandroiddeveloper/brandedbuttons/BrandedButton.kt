@@ -14,6 +14,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 /**
@@ -36,7 +37,7 @@ fun BrandedButton(
     label: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    textStyle: TextStyle = LocalTextStyle.current,
+    textStyle: TextStyle = LocalTextStyle.current.copy(fontWeight = FontWeight.Bold),
     enabled: Boolean = true,
     elevation: ButtonElevation? = ButtonDefaults.elevation(),
     shape: Shape = MaterialTheme.shapes.small,
@@ -68,7 +69,11 @@ fun BrandedButton(
                 contentDescription = null
             )
             Spacer(modifier = Modifier.width(24.dp))
-            Text(text = label, style = textStyle, color = brandedButtonType.contentColor)
+            Text(
+                text = label,
+                style = textStyle,
+                color = brandedButtonType.contentColor
+            )
         }
     }
 }
