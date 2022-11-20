@@ -5,7 +5,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.brandedbuttons.Brand
+import com.theandroiddeveloper.brandedbuttons.BrandedButtonType
 import com.theandroiddeveloper.brandedbuttons.BrandedButton
 
 
@@ -14,13 +14,13 @@ import com.theandroiddeveloper.brandedbuttons.BrandedButton
 internal fun DarkGoogleButtonPreview() {
     PreviewColumn {
         BrandedButton(
-            brand = Brand.Google.DarkGoogleButton,
+            brandedButtonType = BrandedButtonType.Google.DarkGoogleButton,
             label = "Sign in with Google",
             onClick = { /*TODO*/ }
         )
         Spacer(modifier = Modifier.size(16.dp))
         BrandedButton(
-            brand = Brand.Google.LightGoogleButton,
+            brandedButtonType = BrandedButtonType.Google.LightGoogleButton,
             label = "Sign in with Google",
             onClick = { /*TODO*/ }
         )
