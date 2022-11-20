@@ -72,7 +72,7 @@ fun BrandedButton(
             Text(
                 text = label,
                 style = textStyle,
-                color = brandedButtonType.contentColor
+                color = brandedButtonType.textColor
             )
         }
     }
