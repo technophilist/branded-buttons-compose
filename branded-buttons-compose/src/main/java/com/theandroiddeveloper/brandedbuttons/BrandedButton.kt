@@ -22,7 +22,9 @@ import androidx.compose.ui.unit.dp
  * button based on the properties defined in [brandedButtonType].
  * @param brandedButtonType defines the brand of the button based on which the appearance will be set.
  * @param label the text that will appear after the brand icon.
- * @param textStyle the [TextStyle] to be applied for the [label].
+ * @param textStyle the [TextStyle] to be applied for the [label]. Note that setting the color through
+ * the [TextStyle] object **has no effect** since this composable always uses [BrandedButtonType.textColor]
+ * for the text color.
  * @param onClick the lambda to execute when the button is clicked.
  * @param modifier the modifier to be applied to the button.
  * @param enabled Controls the enabled state of the button. When `false`, this button will not
@@ -71,8 +73,7 @@ fun BrandedButton(
             Spacer(modifier = Modifier.width(24.dp))
             Text(
                 text = label,
-                style = textStyle,
-                color = brandedButtonType.textColor
+                style = textStyle.copy(color = brandedButtonType.textColor)
             )
         }
     }
