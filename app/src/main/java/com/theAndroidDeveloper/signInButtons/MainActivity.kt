@@ -1,20 +1,22 @@
 package com.theAndroidDeveloper.signInButtons
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.theAndroidDeveloper.signInButtons.ui.theme.SignInButtonsTheme
-import com.theandroiddeveloper.brandedbuttons.google.DarkGoogleButton
-import com.theandroiddeveloper.brandedbuttons.google.LightGoogleButton
+import com.theandroiddeveloper.brandedbuttons.BrandedButton
+import com.theandroiddeveloper.brandedbuttons.BrandedButtonType
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,13 +33,11 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        DarkGoogleButton(onClick = { /*TODO*/ }){ contentColor->
-                            Text(text = "Sign up with google", color = contentColor)
-                        }
-                        Spacer(modifier = Modifier.size(8.dp))
-                        LightGoogleButton(onClick = { /*TODO*/ }){ contentColor->
-                            Text(text = "Sign up with google", color = contentColor)
-                        }
+                        BrandedButton(
+                            brandedButtonType = BrandedButtonType.Facebook.DarkFacebookButton,
+                            label = "Sign in with Facebook",
+                            onClick = {}
+                        )
                     }
                 }
             }
