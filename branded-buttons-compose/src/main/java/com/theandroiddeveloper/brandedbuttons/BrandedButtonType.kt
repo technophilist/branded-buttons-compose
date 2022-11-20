@@ -1,5 +1,6 @@
 package com.theandroiddeveloper.brandedbuttons
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.ui.graphics.Color
@@ -10,9 +11,16 @@ import com.theandroiddeveloper.brandedbuttons.R
 /**
  * A sealed classes hierarchy that contains different visual properties associated with each branded
  * button.
+ * @param iconResId the resource id for the brand icon.
+ * @param iconHeight the height of the icon.
+ * @param backgroundColor the backgroundColor of the button. This color should contain the color
+ * that a particular brand specifies in it's design specification.
+ * @param contentColor the color to be used within the button. This usually gets applied to the
+ * label of the button.
+ * @param contentPadding the content padding to be applied to the button.
  */
 sealed class BrandedButtonType(
-    val iconResId: Int,
+    @DrawableRes val iconResId: Int,
     val iconHeight: Dp,
     val backgroundColor: Color,
     val contentColor: Color,
