@@ -10,9 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.role
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -48,7 +48,11 @@ fun BrandedButton(
     Button(
         modifier = Modifier
             .sizeIn(minHeight = 40.dp)
-            .then(modifier),
+            .then(modifier)
+            .clearAndSetSemantics {
+                role = Role.Button
+                contentDescription = label
+            },
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(backgroundColor = brandedButtonType.backgroundColor),
         enabled = enabled,
@@ -57,14 +61,7 @@ fun BrandedButton(
         border = border,
         contentPadding = brandedButtonType.contentPadding
     ) {
-        Row(
-            modifier = Modifier.semantics(mergeDescendants = true) {
-                // TODO test and document
-                role = Role.Button
-                contentDescription = label
-            },
-            verticalAlignment = Alignment.CenterVertically
-        ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Image(
                 modifier = Modifier.height(brandedButtonType.iconHeight),
                 painter = painterResource(id = brandedButtonType.iconResId),
