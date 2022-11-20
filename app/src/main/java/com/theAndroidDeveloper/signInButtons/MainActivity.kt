@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.theAndroidDeveloper.signInButtons.ui.theme.SignInButtonsTheme
-import com.theandroiddeveloper.composesigninbuttons.google.DarkGoogleButton
-import com.theandroiddeveloper.composesigninbuttons.google.LightGoogleButton
+import com.theandroiddeveloper.brandedbuttons.google.DarkGoogleButton
+import com.theandroiddeveloper.brandedbuttons.google.LightGoogleButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

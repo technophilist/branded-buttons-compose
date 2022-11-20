@@ -5,7 +5,7 @@ import androidx.compose.material.ButtonDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.composesigninbuttons.R
+import com.theandroiddeveloper.brandedbuttons.R
 
 /**
  * A sealed classes hierarchy that contains different visual properties associated with each branded
