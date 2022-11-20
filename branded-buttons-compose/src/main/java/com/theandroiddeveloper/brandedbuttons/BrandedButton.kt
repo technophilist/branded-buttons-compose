@@ -8,9 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.role
@@ -20,8 +18,8 @@ import androidx.compose.ui.unit.dp
 
 /**
  * A button that contains a brand icon followed by the [label]. It sets the appearance of the
- * button based on the properties defined in [brand].
- * @param brand defines the brand of the button based on which the appearance will be set.
+ * button based on the properties defined in [brandedButtonType].
+ * @param brandedButtonType defines the brand of the button based on which the appearance will be set.
  * @param label the text that will appear after the brand icon.
  * @param textStyle the [TextStyle] to be applied for the [label].
  * @param onClick the lambda to execute when the button is clicked.
@@ -34,7 +32,7 @@ import androidx.compose.ui.unit.dp
  */
 @Composable
 fun BrandedButton(
-    brand: Brand,
+    brandedButtonType: BrandedButtonType,
     label: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
@@ -49,12 +47,12 @@ fun BrandedButton(
             .sizeIn(minHeight = 40.dp)
             .then(modifier),
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors(backgroundColor = brand.backgroundColor),
+        colors = ButtonDefaults.buttonColors(backgroundColor = brandedButtonType.backgroundColor),
         enabled = enabled,
         elevation = elevation,
         shape = shape,
         border = border,
-        contentPadding = brand.contentPadding
+        contentPadding = brandedButtonType.contentPadding
     ) {
         Row(
             modifier = Modifier.semantics(mergeDescendants = true) {
@@ -65,12 +63,12 @@ fun BrandedButton(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                modifier = Modifier.height(brand.iconHeight),
-                painter = painterResource(id = brand.iconResId),
+                modifier = Modifier.height(brandedButtonType.iconHeight),
+                painter = painterResource(id = brandedButtonType.iconResId),
                 contentDescription = null
             )
             Spacer(modifier = Modifier.width(24.dp))
-            Text(text = label, style = textStyle, color = brand.contentColor)
+            Text(text = label, style = textStyle, color = brandedButtonType.contentColor)
         }
     }
 }

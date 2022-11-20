@@ -11,7 +11,7 @@ import com.theandroiddeveloper.brandedbuttons.R
  * A sealed classes hierarchy that contains different visual properties associated with each branded
  * button.
  */
-sealed class Brand(
+sealed class BrandedButtonType(
     val iconResId: Int,
     val iconHeight: Dp,
     val backgroundColor: Color,
@@ -19,7 +19,7 @@ sealed class Brand(
     val contentPadding: PaddingValues = ButtonDefaults.ContentPadding
 ) {
     object Google {
-        object LightGoogleButton : Brand(
+        object LightGoogleButton : BrandedButtonType(
             iconResId = R.drawable.btn_google_light_normal_ios,
             iconHeight = 40.dp,
             backgroundColor = Color.White,
@@ -27,7 +27,7 @@ sealed class Brand(
             contentPadding = PaddingValues(end = 8.dp)
         )
 
-        object DarkGoogleButton : Brand(
+        object DarkGoogleButton : BrandedButtonType(
             iconResId = R.drawable.btn_google_light_normal_ios,
             iconHeight = 40.dp,
             backgroundColor = Color(0xFF4285F4),
@@ -37,14 +37,14 @@ sealed class Brand(
     }
 
     object Twitter {
-        object DarkTwitterButton : Brand(
+        object DarkTwitterButton : BrandedButtonType(
             iconResId = R.drawable.twitter_logo_white,
             iconHeight = 20.dp,
             backgroundColor = Color(0xFF121212),
             contentColor = Color.White
         )
 
-        object LightTwitterButton : Brand(
+        object LightTwitterButton : BrandedButtonType(
             iconResId = R.drawable.twitter_logo_white,
             iconHeight = 20.dp,
             backgroundColor = Color(0xFF1D9BF0),
@@ -53,7 +53,7 @@ sealed class Brand(
     }
 
     object Facebook {
-        object DarkFacebookButton : Brand(
+        object DarkFacebookButton : BrandedButtonType(
             iconResId = R.drawable.facebook_logo_white,
             iconHeight = 25.dp,
             backgroundColor = Color(0xFF1877f2),
@@ -63,14 +63,14 @@ sealed class Brand(
     }
 
     object Apple {
-        object DarkAppleButton : Brand(
+        object DarkAppleButton : BrandedButtonType(
             iconResId = R.drawable.apple_logo_white,
             iconHeight = 25.dp,
             backgroundColor = Color(0xFF000000),
             contentColor = Color.White
         )
 
-        object LightAppleButton : Brand(
+        object LightAppleButton : BrandedButtonType(
             iconResId = R.drawable.apple_logo_black,
             iconHeight = 25.dp,
             backgroundColor = Color.White,
@@ -79,14 +79,14 @@ sealed class Brand(
     }
 
     object Github{
-        object LightGithubButton:Brand(
+        object LightGithubButton:BrandedButtonType(
             iconResId = R.drawable.github_logo_black,
             iconHeight = 40.dp,
             backgroundColor = Color.White,
             contentColor = Color.Black,
             contentPadding = PaddingValues(horizontal = 8.dp)
         )
-        object DarkGithubButton:Brand(
+        object DarkGithubButton:BrandedButtonType(
             iconResId = R.drawable.github_logo_white,
             iconHeight = 40.dp,
             backgroundColor = Color(0xFF333333),
