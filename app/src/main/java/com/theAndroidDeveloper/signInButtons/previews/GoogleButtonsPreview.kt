@@ -5,8 +5,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.theandroiddeveloper.brandedbuttons.BrandedButtonType
-import com.theandroiddeveloper.brandedbuttons.BrandedButton
+import com.brandedbuttons.BrandedButtonType
+import com.brandedbuttons.BrandedButton
 
 
 @PhoneDarkAndNightPreview
