@@ -8,9 +8,10 @@ Branded Buttons for compose is a library that contains stylized buttons accordin
 As mentioned, the buttons contain appropriate semantic properties that works well with accessibility services. For example, if a user is using the Talkback service and the UI presents one or more of the buttons from this library the talkback service will use the phrase - "{The label of the button} button". For example, if the label is set to "Sign in with Google", the talkback service will say "Sign in with Google button".
 
 ## Installation
-1. Add 'https://jitpack.io' to the ```settings.gradle``` file of your project.
+1. Add 'https://jitpack.io' to the ```settings.gradle``` file of your project. If you have configured your project such that all project level repositories are defined in the **project level ```build.gradle```** file, then, instead of adding it to the settings.gradle file, add it to the **project level build.gradle** file.
 
 ```groovy
+// settings.gradle
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -19,6 +20,17 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' } // add this
     }
 }
+```
+
+```groovy
+// project level build.gradle
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
 ```
 
 2. Add the following dependency to your app's ```build.gradle``` file.
