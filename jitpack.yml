@@ -1,0 +1,5 @@
+# make Jitpack use openjdk11 to build the library
+jdk:
+  - openjdk11
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
