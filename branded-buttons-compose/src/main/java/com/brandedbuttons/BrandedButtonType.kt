@@ -1,4 +1,4 @@
-package com.theandroiddeveloper.brandedbuttons
+package com.brandedbuttons
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.PaddingValues
@@ -6,6 +6,7 @@ import androidx.compose.material.ButtonDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.brandedbuttons.R
 
 /**
  * A sealed classes hierarchy that contains different visual properties associated with each branded
@@ -85,14 +86,14 @@ sealed class BrandedButtonType(
     }
 
     object Github{
-        object LightGithubButton:BrandedButtonType(
+        object LightGithubButton: BrandedButtonType(
             iconResId = R.drawable.github_logo_black,
             iconHeight = 40.dp,
             backgroundColor = Color.White,
             textColor = Color.Black,
             contentPadding = PaddingValues(horizontal = 16.dp)
         )
-        object DarkGithubButton:BrandedButtonType(
+        object DarkGithubButton: BrandedButtonType(
             iconResId = R.drawable.github_logo_white,
             iconHeight = 40.dp,
             backgroundColor = Color(0xFF333333),
