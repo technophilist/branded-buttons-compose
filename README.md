@@ -5,11 +5,16 @@
 Branded Buttons for compose is a library that contains buttons stylized according to the specification of each brand. It allows you to create high quality social sign-in, sign-up, and "continue with" buttons. For example, you can create a Google branded button with a label that displays "Sign up with Google". Just tell the library which brand and variant is required. The library takes care of creating a button with the required brand colors and logo. In addition, it takes care of setting the appropriate semantic properties. This ensures that **the button works well with accessibility services out of the box.**
 
 ## Currently available buttons
-- Google 
-- Twitter 
-- Github 
-- Apple 
-- Facebook 
+- Google <br>
+<img src ="images/google-buttons.png" width = "273" height = "141"></img>
+- Twitter <br>
+<img src ="images/twitter-buttons.png" width = "273" height = "141"></img>
+- Github <br>
+<img src ="images/github-buttons.png" width = "273" height = "141"></img>
+- Apple <br>
+<img src ="images/apple-buttons.png" width = "273" height = "141"></img>
+- Facebook <br>
+<img src ="images/facebook-button.png" width = "301" height = "73"></img>
 
 ## Usage
 The central API of this library is the ```BrandedButton()``` composable function. It has three mandatory arguments that allows you to specify the type of the branded button, label and a lamda that will be executed when the button is clicked. It also has other optional parameters that allows you to customize the button.
