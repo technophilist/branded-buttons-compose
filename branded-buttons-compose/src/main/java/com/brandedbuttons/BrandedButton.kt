@@ -1,4 +1,4 @@
-package com.theandroiddeveloper.brandedbuttons
+package com.brandedbuttons
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image

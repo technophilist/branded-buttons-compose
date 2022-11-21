@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.theandroiddeveloper.brandedbuttons'
+    namespace 'com.brandedbuttons'
     compileSdk 33
 
     defaultConfig {
