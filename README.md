@@ -2,7 +2,10 @@
 <p align = "center"> A simple library that can be used to create branded sign-in,sign-up and "continue with" buttons. </p>
 
 # Branded Buttons [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-Branded Buttons for compose is a library that contains buttons stylized according to the specification of each brand. It allows you to create high quality social sign-in, sign-up, and "continue with" buttons. For example, you can create a Google branded button with a label that displays "Sign up with Google". Just tell the library which brand and variant is required. The library takes care of creating a button with the required brand colors and logo. In addition, it takes care of setting the appropriate semantic properties. This ensures that **the button works well with accessibility services out of the box.**
+Branded Buttons for compose is a library that contains stylized buttons according to the specification of each brand. It allows you to create high quality social sign-in, sign-up, and "continue with" buttons. For example, you can create a Google branded button with a label that displays "Sign up with Google". Just tell the library which brand and variant is required. The library takes care of creating a button with the required brand colors and logo. In addition, it takes care of setting the appropriate semantic properties. This ensures that **the button works well with accessibility services out of the box.**
+
+## Accessibility
+As mentioned, the buttons contain appropriate semantic properties that works well with accessibility services. For example, if a user is using the Talkback service and the UI presents one or more of the buttons from this library the talkback service will use the phrase - "{The label of the button} button". For example, if the label is set to "Sign in with Google", the talkback service will say "Sign in with Google button".
 
 ## Currently available buttons
 - Google <br>
@@ -17,7 +20,7 @@ Branded Buttons for compose is a library that contains buttons stylized accordin
 <img src ="images/facebook-button.png" width = "301" height = "73"></img>
 
 ## Usage
-The central API of this library is the ```BrandedButton()``` composable function. It has three mandatory arguments that allows you to specify the type of the branded button, label and a lamda that will be executed when the button is clicked. It also has other optional parameters that allows you to customize the button.
+The central API of this library is the ```BrandedButton()``` composable function. It has three mandatory arguments that allows you to specify the type of the branded button, label and a lambda that will be executed when the button is clicked. It also has other optional parameters that allows you to customize the button.
 ```kotlin
 @Composable
 fun BrandedButton(
