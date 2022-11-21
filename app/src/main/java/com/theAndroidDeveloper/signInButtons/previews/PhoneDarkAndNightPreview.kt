@@ -1,4 +1,4 @@
-package com.theandroiddeveloper.brandedbuttons.previews
+package com.theAndroidDeveloper.signInButtons.previews
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Devices
