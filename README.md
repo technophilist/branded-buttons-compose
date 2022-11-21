@@ -7,6 +7,28 @@ Branded Buttons for compose is a library that contains stylized buttons accordin
 ## Accessibility
 As mentioned, the buttons contain appropriate semantic properties that works well with accessibility services. For example, if a user is using the Talkback service and the UI presents one or more of the buttons from this library the talkback service will use the phrase - "{The label of the button} button". For example, if the label is set to "Sign in with Google", the talkback service will say "Sign in with Google button".
 
+## Installation
+1. Add 'https://jitpack.io' to the ```settings.gradle``` file of your project.
+
+```groovy
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // add this
+    }
+}
+```
+
+2. Add the following dependency to your app's ```build.gradle``` file.
+
+```groovy
+dependencies {
+    implementation 'com.github.t3chkid:branded-buttons-compose:2.0.0-alpha01'
+}
+```
+
 ## Currently available buttons
 - Google <br>
 <img src ="images/google-buttons.png" width = "273" height = "141"></img>
