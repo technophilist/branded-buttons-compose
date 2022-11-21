@@ -60,7 +60,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.theandroiddeveloper.compose'
+                groupId = 'com.github.t3chkid'
                 artifactId = 'branded-buttons-compose'
                 version = '1.0.0-alpha01'
             }
