@@ -1,4 +1,4 @@
-package com.theandroiddeveloper.brandedbuttons.previews
+package com.theAndroidDeveloper.signInButtons.previews
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement

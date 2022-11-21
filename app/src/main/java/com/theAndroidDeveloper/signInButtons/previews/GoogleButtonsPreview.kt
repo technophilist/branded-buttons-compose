@@ -1,4 +1,4 @@
-package com.theandroiddeveloper.brandedbuttons.previews
+package com.theAndroidDeveloper.signInButtons.previews
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
@@ -8,20 +8,22 @@ import androidx.compose.ui.unit.dp
 import com.theandroiddeveloper.brandedbuttons.BrandedButtonType
 import com.theandroiddeveloper.brandedbuttons.BrandedButton
 
+
 @PhoneDarkAndNightPreview
 @Composable
-internal fun TwitterButtonsPreview() {
+internal fun DarkGoogleButtonPreview() {
     PreviewColumn {
         BrandedButton(
-            brandedButtonType = BrandedButtonType.Twitter.DarkTwitterButton,
-            label = "Sign in with Twitter",
+            brandedButtonType = BrandedButtonType.Google.DarkGoogleButton,
+            label = "Sign in with Google",
             onClick = { /*TODO*/ }
         )
         Spacer(modifier = Modifier.size(16.dp))
         BrandedButton(
-            brandedButtonType = BrandedButtonType.Twitter.LightTwitterButton,
-            label = "Sign in with Twitter",
+            brandedButtonType = BrandedButtonType.Google.LightGoogleButton,
+            label = "Sign in with Google",
             onClick = { /*TODO*/ }
         )
     }
 }
+
