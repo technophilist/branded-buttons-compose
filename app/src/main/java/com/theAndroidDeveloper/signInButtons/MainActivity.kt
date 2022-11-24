@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.theAndroidDeveloper.signInButtons.ui.theme.SignInButtonsTheme
 import com.brandedbuttons.BrandedButton
+import com.brandedbuttons.core.BrandedButtonType
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
