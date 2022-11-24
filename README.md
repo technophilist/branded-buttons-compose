@@ -52,16 +52,40 @@ dependencies {
 ```
 
 ## Currently available buttons
-- Google <br>
-<img src ="images/google-buttons.png" width = "273" height = "141"></img>
-- Twitter <br>
-<img src ="images/twitter-buttons.png" width = "273" height = "141"></img>
-- Github <br>
-<img src ="images/github-buttons.png" width = "273" height = "141"></img>
-- Apple <br>
-<img src ="images/apple-buttons.png" width = "273" height = "141"></img>
-- Facebook <br>
-<img src ="images/facebook-button.png" width = "301" height = "73"></img>
+
+<table>
+    <tr>
+        <th> Brand </th>
+        <th> Material 3 </th>
+        <th> Material 2 </th> 
+    <tr>
+    <tr>
+        <td> Google </td>
+        <td  width = "273" height = "150"> <img src ="images/m3-google-buttons.png" width = "270" height = "147"></img> </td> 
+        <td  width = "276" height = "144"> <img src ="images/google-buttons.png" width = "273" height = "141"></img> </td> 
+    <tr>    
+    <tr>
+        <td> Twitter </td>
+        <td  width = "273" height = "150"> <img src ="images/m3-twitter-buttons.png" width = "270" height = "147"></img> </td> 
+        <td  width = "276" height = "144"> <img src ="images/twitter-buttons.png" width = "273" height = "141"></img> </td> 
+    <tr>       
+    <tr>
+        <td> Github </td>
+        <td  width = "273" height = "150"> <img src ="images/m3-github-buttons.png" width = "270" height = "147"></img> </td> 
+        <td  width = "276" height = "144"> <img src ="images/github-buttons.png" width = "273" height = "141"></img> </td> 
+    <tr>    
+    <tr>
+        <td> Apple </td>
+        <td  width = "273" height = "150"> <img src ="images/m3-apple-buttons.png" width = "270" height = "147"></img> </td> 
+        <td  width = "276" height = "144"> <img src ="images/apple-buttons.png" width = "273" height = "141"></img> </td> 
+    <tr>  
+    <tr>
+        <td> Faebook </td>
+        <td  width = "276" height = "144"> <img src ="images/m3-facebook-button.png" width = "301" height = "73"></img> </td> 
+        <td  width = "273" height = "150"> <img src ="images/facebook-button.png" width = "301" height = "73"></img> </td> 
+    <tr>     
+</table>
+
 
 ## Usage
 The central API of this library is the ```BrandedButton()``` composable function. It has three mandatory arguments that allows you to specify the type of the branded button, label, and a lambda that will be executed when the button is clicked. It also has other optional parameters that allows you to customize the button.
