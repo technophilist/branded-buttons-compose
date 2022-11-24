@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Sign In Buttons"
 include ':app'
 include ':branded-buttons-compose'
+include ':branded-buttons-core'
