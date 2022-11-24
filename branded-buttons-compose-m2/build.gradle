@@ -61,7 +61,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.t3chkid.branded-buttons-compose' // TODO explain why you it is necessary to include the repo name in grp id
-                artifactId = 'branded-buttons-compose'
+                artifactId = 'branded-buttons-compose-m2'
                 version = '1.0.0-alpha01'
             }
         }
