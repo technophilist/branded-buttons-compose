@@ -34,7 +34,7 @@ sealed class BrandedButtonType(
             iconHeight = 40.dp,
             backgroundColor = Color.White,
             textColor = Color.Gray,
-            contentPadding = PaddingValues(horizontal = 8.dp)
+            contentPadding = PaddingValues(horizontal = 16.dp)
         )
 
         object DarkGoogleButton : BrandedButtonType(
@@ -42,7 +42,7 @@ sealed class BrandedButtonType(
             iconHeight = 40.dp,
             backgroundColor = Color(0xFF4285F4),
             textColor = Color.White,
-            contentPadding = PaddingValues(horizontal = 8.dp)
+            contentPadding = PaddingValues(horizontal = 16.dp)
         )
     }
 
