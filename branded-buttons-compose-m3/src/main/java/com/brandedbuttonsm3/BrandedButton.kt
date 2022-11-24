@@ -3,7 +3,6 @@ package com.brandedbuttonsm3
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -44,7 +43,7 @@ fun BrandedButton(
     textStyle: TextStyle = LocalTextStyle.current.copy(fontWeight = FontWeight.Bold),
     enabled: Boolean = true,
     elevation: ButtonElevation? = ButtonDefaults.buttonElevation(),
-    shape: Shape = MaterialTheme.shapes.small,
+    shape: Shape = ButtonDefaults.shape,
     border: BorderStroke? = null
 ) {
     Button(
