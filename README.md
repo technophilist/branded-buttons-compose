@@ -35,11 +35,19 @@ allprojects {
 
 ```
 
-2. Add the following dependency to your app's ```build.gradle``` file.
+2. Add the following dependencies to your app's ```build.gradle``` file.
 
 ```groovy
 dependencies {
-    implementation 'com.github.t3chkid:branded-buttons-compose:2.0.0-alpha01'
+
+    // required dependency for both material 2 and material 3 buttons
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-core:1.0.0'
+    
+    // dependency for material 2 buttons
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m2:1.0.0'
+    
+    // dependency for material 3 buttons
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m3:1.0.0'
 }
 ```
 
