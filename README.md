@@ -1,8 +1,9 @@
 ![Banner image](images/banner.png)
 <p align = "center"> A simple library that can be used to create branded sign-in,sign-up, and "continue with" buttons. </p>
+<p align = "center"><img src = "https://jitpack.io/v/t3chkid/branded-buttons-compose.svg"> </img> <img src = "https://www.repostatus.org/badges/latest/wip.svg"></img>
+</p>
 
-# Branded Buttons [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![](https://jitpack.io/v/t3chkid/branded-buttons-compose.svg)](https://jitpack.io/#t3chkid/branded-buttons-compose)
-
+# Branded Buttons 
 Branded Buttons for compose is a library that contains stylized buttons according to the specification of each brand. It allows you to create high quality social sign-in, sign-up, and "continue with" buttons. For example, you can create a Google branded button with a label that displays "Sign up with Google". Just tell the library which brand and variant is required. The library takes care of creating a button with the required brand colors and logo. In addition, it takes care of setting the appropriate semantic properties. This ensures that **the button works well with accessibility services out of the box.** Separate artifacts are available for both material 2 and material 3. 
 
 ## Accessibility
