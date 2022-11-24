@@ -17,3 +17,4 @@ rootProject.name = "Sign In Buttons"
 include ':app'
 include ':branded-buttons-compose-m2'
 include ':branded-buttons-core'
+include ':branded-buttons-compose-m3'
