@@ -60,5 +60,5 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
-    implementation 'com.github.t3chkid:branded-buttons-compose:2.0.0-alpha01'
+    implementation project(":branded-buttons-compose")
 }
