@@ -11,7 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/branded-buttons-compose" />
+            <option value="$PROJECT_DIR$/branded-buttons-compose-m2" />
+            <option value="$PROJECT_DIR$/branded-buttons-core" />
           </set>
         </option>
       </GradleProjectSettings>
