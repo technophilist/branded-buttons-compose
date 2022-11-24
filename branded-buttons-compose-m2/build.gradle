@@ -54,6 +54,9 @@ dependencies {
     // Android Studio Preview support
     implementation 'androidx.compose.ui:ui-tooling-preview'
     debugImplementation 'androidx.compose.ui:ui-tooling'
+
+    // branded buttons core
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-core:1.0.0-beta01'
 }
 afterEvaluate {
     publishing {
