@@ -1,7 +1,6 @@
 package com.theAndroidDeveloper.signInButtons
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
@@ -16,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.theAndroidDeveloper.signInButtons.ui.theme.SignInButtonsTheme
 import com.brandedbuttons.BrandedButton
-import com.brandedbuttons.BrandedButtonType
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

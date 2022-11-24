@@ -16,6 +16,7 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.brandedbuttons.core.BrandedButtonType
 
 /**
  * A button that contains a brand icon followed by the [label]. It sets the appearance of the
