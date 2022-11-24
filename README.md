@@ -1,6 +1,7 @@
 ![Banner image](images/banner.png)
 <p align = "center"> A simple library that can be used to create branded sign-in,sign-up, and "continue with" buttons. </p>
-<p align = "center"><img src = "https://jitpack.io/v/t3chkid/branded-buttons-compose.svg"> </img> <img src = "https://www.repostatus.org/badges/latest/wip.svg"></img>
+
+<p align = "center"><img src = "https://jitpack.io/v/t3chkid/branded-buttons-compose.svg"> </img> <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed." /></a>
 </p>
 
 # Branded Buttons 
