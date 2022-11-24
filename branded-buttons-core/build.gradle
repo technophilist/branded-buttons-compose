@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -44,4 +45,17 @@ dependencies {
     implementation composeBom
     androidTestImplementation composeBom
     implementation "androidx.compose.foundation:foundation"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.t3chkid.branded-buttons-compose' // TODO explain why you it is necessary to include the repo name in grp id
+                artifactId = 'branded-buttons-core'
+                version = '1.0.0-alpha01'
+            }
+        }
+    }
 }
