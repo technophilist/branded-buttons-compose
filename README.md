@@ -43,13 +43,13 @@ allprojects {
 dependencies {
 
     // required dependency for both material 2 and material 3 buttons
-    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-core:1.0.0'
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-core:1.0.1'
     
     // dependency for material 2 buttons
-    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m2:1.0.0'
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m2:1.0.1'
     
     // dependency for material 3 buttons
-    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m3:1.0.0'
+    implementation 'com.github.t3chkid.branded-buttons-compose:branded-buttons-compose-m3:1.0.1'
 }
 ```
 
