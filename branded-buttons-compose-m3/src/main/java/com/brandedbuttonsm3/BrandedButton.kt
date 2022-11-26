@@ -49,6 +49,7 @@ fun BrandedButton(
     Button(
         modifier = Modifier
             .sizeIn(minHeight = 40.dp)
+            .defaultMinSize(minWidth = 248.dp)
             .then(modifier)
             .clearAndSetSemantics {
                 role = Role.Button
